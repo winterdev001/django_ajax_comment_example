@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import redirect
-from .models import Blog
-from .forms import BlogForm
+from blog.models import Blog
+from blog.forms import BlogForm
 from django.contrib import messages
 
 # Create your views here.

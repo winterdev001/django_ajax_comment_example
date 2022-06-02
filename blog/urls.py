@@ -1,10 +1,10 @@
 from django.urls import path, include
-from . import views
+from blog.views import blog_view
  
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('create', views.create, name='create'),
-    path('detail/<int:blog_id>', views.detail, name='detail'),
-    path('edit/<int:blog_id>', views.edit, name='edit'),
-    path('delete/<int:blog_id>',views.delete, name='delete'),
+    path('', blog_view.index, name='index'),
+    path('create', blog_view.create, name='create'),
+    path('detail/<int:blog_id>', blog_view.detail, name='detail'),
+    path('edit/<int:blog_id>', blog_view.edit, name='edit'),
+    path('delete/<int:blog_id>',blog_view.delete, name='delete'),
 ]
