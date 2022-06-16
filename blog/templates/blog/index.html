@@ -2,14 +2,12 @@
 {% block content %}
 <!--index.html-->
 
-{% if blogs %}
 <h1>Blogs</h1>
 <table>
     <thead>
         <th>Title</th>
-        <th>Content</th>
+        <th>Body</th>
     </thead>
-    {% endif %}
     {% for blog in blogs %}
     <tr>
         <td>{{ blog.title }}</td>
